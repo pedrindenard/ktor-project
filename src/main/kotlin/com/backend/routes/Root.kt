@@ -1,0 +1,15 @@
+package com.backend.routes
+
+import io.ktor.http.*
+import io.ktor.server.application.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
+
+fun Route.root() {
+    get(path = "/") {
+        call.respond(
+            message = "Welcome to my first API!",
+            status = HttpStatusCode.OK
+        )
+    }
+}
