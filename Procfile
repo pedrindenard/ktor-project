@@ -1,1 +1,1 @@
-web: build/install/backend.com/bin/backend.com
+web: build/install/com.backend-ktor/bin/com.backend-ktor
