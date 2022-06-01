@@ -42,27 +42,11 @@ class HeroRepositoryImpl : HeroRepository {
     }
 
     private fun getCurrentPage(page: Int): Map<String, Int?> {
-        var prevPage: Int? = page
-        var nextPage: Int? = page
-
-        if (page in 1..4) {
-            nextPage = nextPage?.plus(other = 1)
-        }
-
-        if (page in 2..5) {
-            prevPage = prevPage?.minus(other = 1)
-        }
-
-        if (page in 1..4) {
-            prevPage = null
-        }
-
-        if (page in 1..4) {
-            nextPage = null
-        }
+        val previousPage = if (page in 2..5) page.minus(other = 1) else null
+        val nextPage = if (page in 1..4) page.plus(other = 1) else null
 
         return mapOf(
-            Constants.PREV_PAGE to prevPage,
+            Constants.PREV_PAGE to previousPage,
             Constants.NEXT_PAGE to nextPage
         )
     }
