@@ -1,1 +1,1 @@
-web: build/install/com.example.web.heroes.server/bin/com.example.web.heroes.servergit
+web: build/install/com.backend.ktor/bin/com.backend.ktor
