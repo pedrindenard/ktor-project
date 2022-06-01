@@ -1,0 +1,8 @@
+{
+  "name": "server",
+  "description": "example server",
+  "version": "0.0.1",
+  "engines": {
+    "node": "12.11.1"
+  }
+}
