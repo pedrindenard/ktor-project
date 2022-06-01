@@ -24,6 +24,10 @@ repositories {
     maven { url = uri(path = "https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
 }
 
+tasks.create(name = "stage") {
+    dependsOn("installDist")
+}
+
 dependencies {
     //Ktor implementation
     implementation("io.ktor:ktor-server-core-jvm:$ktorVersion")

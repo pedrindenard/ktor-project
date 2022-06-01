@@ -1,0 +1,1 @@
+web: build/install/com.example.web.heroes.server/bin/com.example.web.heroes.servergit
