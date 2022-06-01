@@ -9,7 +9,7 @@ plugins {
     kotlin("plugin.serialization") version "1.6.10"
 }
 
-group = "backend.com"
+group = "com.backend"
 version = "0.0.1"
 
 application {

@@ -1,1 +1,1 @@
-rootProject.name = "com.backend-ktor"
+rootProject.name = "com.backend"
